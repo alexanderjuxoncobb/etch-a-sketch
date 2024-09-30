@@ -4,6 +4,7 @@
 
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center; /* Centers horizontally */
   align-items: center; /* Centers vertically */
   height: 100vh; /* Makes sure the body takes the full height of the viewport */
@@ -25,4 +26,8 @@ body {
   width: 640px;
   height: 640px;
   padding: 0;
+}
+
+button {
+  margin: 10px;
 }
