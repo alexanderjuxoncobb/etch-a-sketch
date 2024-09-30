@@ -28,11 +28,15 @@ function addSketchListeners() {
 
   squareDivs.forEach((squareDiv) => {
     squareDiv.addEventListener("mousedown", function () {
-      squareDiv.style.backgroundColor = "black";
+      squareDiv.style.backgroundColor = `rgb(${Math.random() * 256}, ${
+        Math.random() * 256
+      }, ${Math.random() * 256})`;
     });
+    let n = 0;
     squareDiv.addEventListener("mouseenter", function () {
       if (isMouseDown) {
-        squareDiv.style.backgroundColor = "black";
+        squareDiv.style.backgroundColor = `rgb(0 0 0 / ${100 * 0.9 ** n}%)`;
+        n++;
       }
     });
   });
